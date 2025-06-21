@@ -73,7 +73,7 @@ export const DriverDetails = () => {
         return (
             <div className="text-center p-10">
                 <h2 className="text-2xl font-bold">Driver not found</h2>
-                <Link to="/drivers" className="text-blue-500 mt-4 inline-block">Go back to drivers list</Link>
+                <Link to="/dashboard/drivers" className="text-blue-500 mt-4 inline-block">Go back to drivers list</Link>
             </div>
         );
     }
@@ -81,7 +81,7 @@ export const DriverDetails = () => {
     return (
         <div className="p-8 bg-gray-50 min-h-screen">
             <div className="mb-6">
-                <Link to="/drivers" className="flex items-center text-sm text-gray-600 hover:text-gray-900">
+                <Link to="/dashboard/drivers" className="flex items-center text-sm text-gray-600 hover:text-gray-900">
                     <FiArrowLeft className="mr-2" />
                     Back to all drivers
                 </Link>

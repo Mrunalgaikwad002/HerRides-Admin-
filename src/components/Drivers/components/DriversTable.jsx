@@ -67,7 +67,10 @@ const DriversTable = () => {
                 </td>
                 <td className="py-4 px-4 whitespace-nowrap"><StatusBadge status={driver.status} /></td>
                 <td className="py-4 px-4 text-gray-500 whitespace-nowrap text-right">
-                    <Link to={`/drivers/${driver.id}`} className="bg-gray-100 text-gray-600 hover:bg-gray-200 px-4 py-2 rounded-md text-sm font-medium transition-colors">
+                    <Link 
+                        to={`/dashboard/drivers/${driver.id}`}
+                        className="text-blue-600 hover:text-blue-900 font-semibold"
+                    >
                         View Details
                     </Link>
                 </td>

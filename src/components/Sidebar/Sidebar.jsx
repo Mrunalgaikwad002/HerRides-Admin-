@@ -51,21 +51,21 @@ export const Sidebar = () => {
             <div className="flex-grow overflow-y-auto">
                 <nav className="p-3">
                     <SectionTitle>Main Menu</SectionTitle>
-                    <NavItem icon={<FiHome className="h-5 w-5" />} to="/">Overview</NavItem>
-                    <NavItem icon={<FiUsers className="h-5 w-5" />} to="/users" badge="1,247">Users</NavItem>
-                    <NavItem icon={<FiUserCheck className="h-5 w-5" />} to="/drivers" badge="342">Drivers</NavItem>
-                    <NavItem icon={<FiTruck className="h-5 w-5" />} to="/rides" badge="23">Rides</NavItem>
-                    <NavItem icon={<FiDollarSign className="h-5 w-5" />} to="/earnings">Earnings</NavItem>
-                    <NavItem icon={<FiPieChart className="h-5 w-5" />} to="/analytics">Analytics</NavItem>
+                    <NavItem icon={<FiHome className="h-5 w-5" />} to="/dashboard">Overview</NavItem>
+                    <NavItem icon={<FiUsers className="h-5 w-5" />} to="/dashboard/users" badge="1,247">Users</NavItem>
+                    <NavItem icon={<FiUserCheck className="h-5 w-5" />} to="/dashboard/drivers" badge="342">Drivers</NavItem>
+                    <NavItem icon={<FiTruck className="h-5 w-5" />} to="/dashboard/rides" badge="23">Rides</NavItem>
+                    <NavItem icon={<FiDollarSign className="h-5 w-5" />} to="/dashboard/earnings">Earnings</NavItem>
+                    <NavItem icon={<FiPieChart className="h-5 w-5" />} to="/dashboard/analytics">Analytics</NavItem>
                     
                     <SectionTitle>Support & Monitoring</SectionTitle>
-                    <NavItem icon={<FiMessageSquare className="h-5 w-5" />} to="/feedback" badge="12" badgeColor="red">Feedback</NavItem>
-                    <NavItem icon={<FiAlertTriangle className="h-5 w-5" />} to="/issues" badge="5" badgeColor="red">Issues</NavItem>
-                    <NavItem icon={<FiFileText className="h-5 w-5" />} to="/reports">Reports</NavItem>
+                    <NavItem icon={<FiMessageSquare className="h-5 w-5" />} to="/dashboard/feedback" badge="12" badgeColor="red">Feedback</NavItem>
+                    <NavItem icon={<FiAlertTriangle className="h-5 w-5" />} to="/dashboard/issues" badge="5" badgeColor="red">Issues</NavItem>
+                    <NavItem icon={<FiFileText className="h-5 w-5" />} to="/dashboard/reports">Reports</NavItem>
 
                     <SectionTitle>System</SectionTitle>
-                    <NavItem icon={<FiSettings className="h-5 w-5" />} to="/settings">Settings</NavItem>
-                    <NavItem icon={<FiShield className="h-5 w-5" />} to="/admin-roles">Admin Roles</NavItem>
+                    <NavItem icon={<FiSettings className="h-5 w-5" />} to="/dashboard/settings">Settings</NavItem>
+                    <NavItem icon={<FiShield className="h-5 w-5" />} to="/dashboard/admin-roles">Admin Roles</NavItem>
                 </nav>
             </div>
         </div>
