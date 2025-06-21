@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FiUser, FiBell, FiShield } from 'react-icons/fi';
 
 const TabButton = ({ label, isActive, onClick }) => (
     <button

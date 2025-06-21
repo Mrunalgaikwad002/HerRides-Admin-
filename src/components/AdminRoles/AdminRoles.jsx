@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FiPlus, FiEdit, FiTrash2, FiUsers, FiShield, FiMoreVertical } from 'react-icons/fi';
+import React from 'react';
+import { FiPlus, FiEdit, FiTrash2, FiUsers, FiShield } from 'react-icons/fi';
 
 const mockRoles = [
   {

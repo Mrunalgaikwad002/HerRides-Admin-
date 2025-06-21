@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiMoreHorizontal, FiSearch, FiStar } from 'react-icons/fi';
+import { FiSearch, FiStar } from 'react-icons/fi';
 
 const drivers = [
     { id: 'DR001', name: 'Priya Sharma', joinDate: '2023-11-10', vehicle: 'TVS Scooty, Lucknow', license: 'UP32ABC', totalRides: 452, rating: 4.8, status: 'Active' },

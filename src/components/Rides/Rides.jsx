@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FiFilter, FiRefreshCw, FiMoreHorizontal, FiMapPin } from 'react-icons/fi';
+import { FiFilter, FiRefreshCw, FiMoreHorizontal } from 'react-icons/fi';
 
 const ridesData = [
     { id: 'RD565', rider: { name: 'Kashish Singh', phone: '+91 9876543210', avatar: 'https://i.pravatar.cc/150?u=kashish' }, driver: { name: 'Priya Sharma', vehicle: '#4365, TVS Scooty', avatar: 'https://i.pravatar.cc/150?u=priya' }, route: { from: 'Hazratganj, Lucknow', to: 'Gomti Nagar, Lucknow' }, time: { date: '12/5/2025 10:45', duration: '11 min' }, fare: { amount: '₹150', distance: '4.6 Km' }, payment: 'Credit card', status: 'Completed' },

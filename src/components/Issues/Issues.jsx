@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FiAlertCircle, FiCheckCircle, FiShield, FiMoreHorizontal, FiFilter } from 'react-icons/fi';
 
 const issuesData = [
@@ -43,8 +43,6 @@ const PriorityBadge = ({ priority }) => {
 };
 
 export const Issues = () => {
-    const [activeTab, setActiveTab] = useState('Open');
-
     return (
         <div className="p-8 bg-gray-50 min-h-screen">
             <header className="mb-8">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FiArrowLeft, FiUser, FiPhone, FiMail, FiStar, FiMapPin, FiTruck, FiFileText, FiDollarSign } from 'react-icons/fi';
 
@@ -66,7 +66,7 @@ const InfoRow = ({ icon, label, value }) => (
 
 export const DriverDetails = () => {
     const { driverId } = useParams();
-    const [activeTab, setActiveTab] = useState('Past Trips');
+    // const [activeTab, setActiveTab] = useState('Past Trips');
     const driver = drivers.find(d => d.id === driverId);
 
     if (!driver) {

@@ -1,8 +1,8 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { 
-    FiHome, FiUsers, FiUserCheck, FiTruck, FiDollarSign, FiPieChart, FiCheckSquare,
-    FiMessageSquare, FiAlertTriangle, FiFileText, FiSettings, FiShield 
+    FiHome, FiUsers, FiUserCheck, FiTruck, FiDollarSign, FiPieChart,
+    FiMessageSquare, FiAlertTriangle, FiFileText, FiSettings, FiShield, FiLogOut 
 } from 'react-icons/fi';
 
 const NavItem = ({ icon, children, to, badge, badgeColor }) => {
@@ -35,6 +35,13 @@ const SectionTitle = ({ children }) => (
 );
 
 export const Sidebar = () => {
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        // Here you can add any other logout logic, like clearing tokens
+        navigate('/login');
+    };
+
     return (
         <div className="w-64 bg-white shadow-md flex flex-col flex-shrink-0">
             {/* Header */}
@@ -67,6 +74,16 @@ export const Sidebar = () => {
                     <NavItem icon={<FiSettings className="h-5 w-5" />} to="/dashboard/settings">Settings</NavItem>
                     <NavItem icon={<FiShield className="h-5 w-5" />} to="/dashboard/admin-roles">Admin Roles</NavItem>
                 </nav>
+            </div>
+            {/* Logout Button */}
+            <div className="p-3 border-t">
+                <button 
+                    onClick={handleLogout}
+                    className="w-full flex items-center px-3 py-2 text-red-500 hover:bg-red-50 rounded-md transition-colors duration-200 text-base font-semibold"
+                >
+                    <FiLogOut className="h-5 w-5 mr-3" />
+                    <span>Logout</span>
+                </button>
             </div>
         </div>
     );

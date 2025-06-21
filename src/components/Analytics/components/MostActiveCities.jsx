@@ -1,6 +1,5 @@
 import React from 'react';
 import { FiMapPin } from 'react-icons/fi';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 const cities = [
     { name: 'Lucknow', rides: '12.5k', earnings: '₹2.5L', color: 'bg-blue-500' },
